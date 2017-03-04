@@ -68,6 +68,15 @@ atom-text-editor .search-results .marker.current-result .region {
   display: inline;
 }
 
+.syntax--heading,
+.syntax--bold {
+  font-weight: bold;
+}
+
+.syntax--italic {
+  font-style: italic;
+}
+
 .syntax--language,
 .syntax--decimal,
 .syntax--boolean,
@@ -77,11 +86,11 @@ atom-text-editor .search-results .marker.current-result .region {
 }
 
 .syntax--tag,
-.syntax--property-name {
+.syntax--property-name,
+.syntax--heading {
   color: hsl(20, 20%, 50%);
 }
 
-.syntax--comment,
 .syntax--operator,
 .syntax--punctuation {
   color: hsl(10, 10%, 50%);
@@ -100,11 +109,17 @@ atom-text-editor .search-results .marker.current-result .region {
 .syntax--method-call,
 .syntax--entity.syntax--function,
 .syntax--property,
-.syntax--support.syntax--constant {
+.syntax--support.syntax--constant,
+.syntax--raw {
   color: hsl(195, 10%, 50%);
 }
 
 .syntax--string,
-.syntax--regexp {
+.syntax--regexp,
+.syntax--link {
   color: hsl(40, 50%, 50%);
+}
+
+.syntax--comment {
+  color: hsl(10, 0%, 50%);
 }
