@@ -79,6 +79,7 @@ atom-text-editor .search-results .marker.current-result .region {
 
 .syntax--method-call,
 .syntax--property,
+.syntax--property-list,
 .syntax--function,
 .syntax--tag,
 .syntax--property-name {
@@ -88,13 +89,19 @@ atom-text-editor .search-results .marker.current-result .region {
 .syntax--control,
 .syntax--storage,
 .syntax--new,
+.syntax--operator,
+.syntax--instanceof,
+.syntax--typeof,
 .syntax--heading {
   color: hsl(335, 20%, 50%);
 }
 
-.syntax--meta.syntax--structure.syntax--dictionary > .syntax--quoted,
 .syntax--attribute-name,
-.syntax--variable.syntax--other {
+.syntax--selector > .syntax--tag,
+.syntax--variable.syntax--other,
+.syntax--meta.syntax--structure.syntax--dictionary > .syntax--quoted,
+.syntax--meta.syntax--structure.syntax--dictionary > .syntax--quoted .syntax--string,
+.syntax--assignment {
   color: hsl(0, 20%, 50%);
 }
 
@@ -109,13 +116,16 @@ atom-text-editor .search-results .marker.current-result .region {
 .syntax--string,
 .syntax--regexp,
 .syntax--link,
-.syntax--meta.syntax--structure.syntax--dictionary.syntax--value > .syntax--quoted {
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--value > .syntax--quoted,
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--value > .syntax--quoted .syntax--string {
   color: hsl(50, 40%, 50%);
 }
 
-.syntax--operator,
-.syntax--punctuation,
 .syntax--comment,
 .syntax--raw {
   color: hsl(0, 0%, 50%);
+}
+
+.syntax--property-value {
+  color: @syntax-text-color;
 }
