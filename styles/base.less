@@ -77,15 +77,13 @@ atom-text-editor .search-results .marker.current-result .region {
   font-style: italic;
 }
 
-.syntax--method-call,
-.syntax--property,
-.syntax--property-list,
-.syntax--function,
-.syntax--tag,
-.syntax--property-name {
-  color: hsl(210, 20%, 60%);
+.syntax--language,
+.syntax--css .syntax--variable {
+  color: hsl(185, 25%, 70%);
 }
 
+.syntax--tag,
+.syntax--css.syntax--attribute-name,
 .syntax--control,
 .syntax--storage,
 .syntax--new,
@@ -93,32 +91,33 @@ atom-text-editor .search-results .marker.current-result .region {
 .syntax--instanceof,
 .syntax--typeof,
 .syntax--heading {
-  color: hsl(335, 30%, 60%);
+  color: hsl(335, 35%, 70%);
 }
 
+.syntax--method-call,
+.syntax--function-call,
 .syntax--attribute-name,
-.syntax--selector > .syntax--tag,
-.syntax--variable.syntax--other,
-.syntax--meta.syntax--structure.syntax--dictionary > .syntax--quoted,
-.syntax--meta.syntax--structure.syntax--dictionary > .syntax--quoted .syntax--string,
-.syntax--assignment {
-  color: hsl(0, 30%, 60%);
+.syntax--property-name,
+.syntax--json > .syntax--quoted,
+.syntax--json > .syntax--quoted .syntax--string,
+.syntax--coffee.syntax--assignment
+{
+  color: hsl(25, 70%, 70%);
 }
 
-.syntax--language,
 .syntax--decimal,
 .syntax--boolean,
 .syntax--numeric,
 .syntax--unit {
-  color: hsl(25, 50%, 60%);
+  color: hsl(0, 70%, 70%);
 }
 
 .syntax--string,
 .syntax--regexp,
 .syntax--link,
-.syntax--meta.syntax--structure.syntax--dictionary.syntax--value > .syntax--quoted,
-.syntax--meta.syntax--structure.syntax--dictionary.syntax--value > .syntax--quoted .syntax--string {
-  color: hsl(50, 50%, 60%);
+.syntax--json.syntax--value > .syntax--quoted,
+.syntax--json.syntax--value > .syntax--quoted .syntax--string {
+  color: hsl(50, 60%, 70%);
 }
 
 .syntax--comment,
