@@ -1,5 +1,5 @@
 # blacksmith-syntax theme
 
-A dark theme with orange, yellow, and red colors. Inspired by [Batman Syntax](https://atom.io/themes/batman-syntax). 
+A dark theme with orange, yellow, and red colors.
 
 ![screenshot of the theme](https://raw.githubusercontent.com/erickmerchant/blacksmith-syntax/master/screenshot.png)
