@@ -77,11 +77,6 @@ atom-text-editor .search-results .marker.current-result .region {
   font-style: italic;
 }
 
-.syntax--language,
-.syntax--css .syntax--variable {
-  color: hsl(185, 25%, 70%);
-}
-
 .syntax--tag,
 .syntax--css.syntax--attribute-name,
 .syntax--control,
@@ -89,27 +84,30 @@ atom-text-editor .search-results .marker.current-result .region {
 .syntax--new,
 .syntax--operator,
 .syntax--instanceof,
-.syntax--typeof,
-.syntax--heading {
-  color: hsl(335, 35%, 70%);
+.syntax--typeof {
+  color: hsl(335, 40%, 65%);
 }
 
-.syntax--method-call,
-.syntax--function-call,
+.syntax--method-call > .syntax--function,
+.syntax--function-call > .syntax--function,
+.syntax--template.syntax--string,
+.syntax--css .syntax--variable,
+.syntax--css .syntax--property-list,
 .syntax--attribute-name,
 .syntax--property-name,
 .syntax--json > .syntax--quoted,
 .syntax--json > .syntax--quoted .syntax--string,
-.syntax--coffee.syntax--assignment
-{
-  color: hsl(25, 70%, 70%);
+.syntax--coffee.syntax--assignment,
+.syntax--heading {
+  color: hsl(25, 80%, 65%);
 }
 
+.syntax--language,
 .syntax--decimal,
 .syntax--boolean,
 .syntax--numeric,
 .syntax--unit {
-  color: hsl(0, 70%, 70%);
+  color: hsl(0, 60%, 65%);
 }
 
 .syntax--string,
@@ -117,14 +115,16 @@ atom-text-editor .search-results .marker.current-result .region {
 .syntax--link,
 .syntax--json.syntax--value > .syntax--quoted,
 .syntax--json.syntax--value > .syntax--quoted .syntax--string {
-  color: hsl(50, 60%, 70%);
+  color: hsl(50, 40%, 65%);
 }
 
 .syntax--comment,
 .syntax--raw {
-  color: hsl(0, 0%, 60%);
+  color: hsl(0, 0%, 55%);
 }
 
-.syntax--property-value {
+.syntax--property-value,
+.syntax--property-list .syntax--punctuation,
+.syntax--property-list.syntax--punctuation {
   color: @syntax-text-color;
 }
