@@ -162,6 +162,10 @@ atom-text-editor {
       color: @orange;
       font-style: italic;
     }
+
+    &.syntax--tag {
+      color: @syntax-text-color;
+    }
   }
 
   &.syntax--section.syntax--embedded {
@@ -205,8 +209,8 @@ atom-text-editor {
   }
 
   &.syntax--name.syntax--tag {
-    color: @red;
     text-decoration: underline;
+    color: @blue;
   }
 
   &.syntax--other.syntax--attribute-name {
