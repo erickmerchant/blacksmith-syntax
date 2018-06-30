@@ -83,7 +83,7 @@ atom-text-editor {
 }
 
 .syntax--constant {
-  color: @yellow;
+  color: @syntax-text-color;
 
   &.syntax--character.syntax--escape {
     color: @orange;
@@ -106,7 +106,7 @@ atom-text-editor {
   color: @red;
 
   &.syntax--interpolation {
-    color: darken(@red, 10%);
+    color: @red;
   }
 
   &.syntax--parameter.syntax--function {
@@ -169,7 +169,7 @@ atom-text-editor {
   }
 
   &.syntax--section.syntax--embedded {
-    color: darken(@red, 10%);
+    color: @red;
   }
 
 }
@@ -190,7 +190,7 @@ atom-text-editor {
 
 .syntax--entity {
   &.syntax--name.syntax--function {
-    color: @blue;
+    color: @purple;
   }
   &.syntax--name.syntax--type {
     color: @yellow;
